@@ -1,0 +1,2 @@
+import type { MetadataRoute } from "next";
+export default function manifest(): MetadataRoute.Manifest { return { name: "Verba — English speaking practice", short_name: "Verba", description: "British English speaking practice for educators.", start_url: "/", display: "standalone", background_color: "#fcfaf5", theme_color: "#3f4f3a", icons: [{ src: "/icon.svg", sizes: "any", type: "image/svg+xml" }] }; }

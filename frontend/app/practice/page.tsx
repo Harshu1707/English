@@ -1,0 +1,2 @@
+import SiteShell from "../../components/SiteShell"; import RecordingStudio from "../../components/RecordingStudio"; import WordFocus from "../../components/WordFocus"; import PracticeHistory from "../../components/PracticeHistory";
+export default function Practice(){return <SiteShell><header className="page-header"><div><p className="eyebrow">PERSONAL PRACTICE</p><h1>Give difficult words room.</h1><p>Repeat, listen and notice what changes. There’s no rush.</p></div></header><div className="practice-layout"><RecordingStudio/><WordFocus/></div><PracticeHistory/></SiteShell>}

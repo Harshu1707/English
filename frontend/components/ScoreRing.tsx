@@ -1,0 +1,3 @@
+"use client";
+import { motion } from "framer-motion";
+export default function ScoreRing({score, label, small=false}:{score:number;label:string;small?:boolean}) { const r=small?31:58, c=2*Math.PI*r; return <div className={small?"score-ring small":"score-ring"}><svg viewBox="0 0 140 140"><circle className="track" cx="70" cy="70" r={r}/><motion.circle className="progress" cx="70" cy="70" r={r} initial={{strokeDasharray:`0 ${c}`}} animate={{strokeDasharray:`${c*score/100} ${c}`}} transition={{duration:1.1,ease:"easeOut"}}/></svg><div><b>{score}</b><span>{small?"%":"/ 100"}</span><em>{label}</em></div></div>; }
